@@ -17,9 +17,6 @@ using System.Windows.Shapes;
 
 namespace KatBarberShop.View.Page
 {
-    /// <summary>
-    /// Логика взаимодействия для EmployeesPage.xaml
-    /// </summary>
     public partial class EmployeesPage
     {
         public EmployeesPage()
@@ -68,7 +65,7 @@ namespace KatBarberShop.View.Page
         private void EditBt_Click(object sender, RoutedEventArgs e)
         {
             Worker worker = (Worker)customersList.SelectedItem;
-            
+            FrameClass.SweepFrame.Navigate(new EntryPage(worker));
         }
     }
 }

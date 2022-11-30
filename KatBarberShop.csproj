@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="ApplocationData\AppConnect.cs" />
     <Compile Include="ApplocationData\Employees.cs" />
+    <Compile Include="ApplocationData\FrameClass.cs" />
     <Compile Include="Model\Clients.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KatBarberShop.ApplocationData;
+using KatBarberShop.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +17,12 @@ using System.Windows.Shapes;
 
 namespace KatBarberShop.View.Page
 {
-    /// <summary>
-    /// Логика взаимодействия для EntryPage.xaml
-    /// </summary>
     public partial class EntryPage
     {
-        public EntryPage()
+        public EntryPage(Worker worker)
         {
             InitializeComponent();
+            AppConnect.model1db = new БарберШоп_KatEntities5();
         }
 
         private void AddBt_Click(object sender, RoutedEventArgs e)
