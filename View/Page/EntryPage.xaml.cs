@@ -23,6 +23,11 @@ namespace KatBarberShop.View.Page
         {
             InitializeComponent();
             AppConnect.model1db = new БарберШоп_KatEntities5();
+            if (worker != null ) 
+            {
+                worker = worker;
+                DataContext = worker;
+            }
         }
 
         private void AddBt_Click(object sender, RoutedEventArgs e)
