@@ -12,23 +12,23 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.7*"/>
             <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="1*"/>
+            
         </Grid.ColumnDefinitions>
         <DataGrid 
             x:Name="customersList" 
             Grid.Column="1"
             AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Width="*" Header="Number"  Binding="{Binding Number}"/>
-                <DataGridTextColumn Width="*" Header="Name" Binding="{Binding Name}"/>
-                <DataGridTextColumn Width="*" Header="Surname" Binding="{Binding Surname}"/>
-                <DataGridTextColumn Width="*" Header="Data" Binding="{Binding Data}"/>
-                <DataGridTextColumn Width="*" Header="Paul" Binding="{Binding Paul}"/>
+                <DataGridTextColumn Width="*" Header="Номер"  Binding="{Binding Number}"/>
+                <DataGridTextColumn Width="*" Header="Имя" Binding="{Binding Name}"/>
+                <DataGridTextColumn Width="*" Header="Фамилия" Binding="{Binding Surname}"/>
+                <DataGridTextColumn Width="*" Header="Дата" Binding="{Binding Data, StringFormat='{}{0:dd.MM.yyyy}'}"/>
+                <DataGridTextColumn Width="*" Header="Пол" Binding="{Binding Paul}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Search" FontSize="18"  Grid.Column="0"/>
         <TextBox x:Name="SearchTb" Grid.Column="0" Height="25" VerticalAlignment="Top" Margin="0 40 0 0" TextChanged="SearchTb_TextChanged"/>
-        <Button Style="{StaticResource RoundButton}" x:Name="SearchBt" Width="100" Height="25" Content="Поиск" Background="Transparent" FontSize="15" VerticalAlignment="Top" Margin="0 80 0 0 " Click="SearchBt_Click"/>
-
+        <Button Style="{StaticResource RoundButton}" x:Name="SearchBt" Width="100" Height="25" Content="Удаление" Background="Transparent" FontSize="15" VerticalAlignment="Top" Margin="0 80 0 0 " Click="SearchBt_Click"/>
+        
     </Grid>
 </Page>

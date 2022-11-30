@@ -25,6 +25,7 @@ namespace KatBarberShop.View.Page
         public EmployeesPage()
         {
             InitializeComponent();
+            AppConnect.model1db = new БарберШоп_KatEntities5();
             customersList.ItemsSource = AppConnect.model1db.Worker.ToList();
 
 
@@ -32,15 +33,38 @@ namespace KatBarberShop.View.Page
 
         private void SearchBt_Click(object sender, RoutedEventArgs e)
         {
-            MiniEmployees1 MiniEmployees1 = new MiniEmployees1();
-            MiniEmployees1. Show();
+            if(MessageBox.Show("Удалить?","Удаление",MessageBoxButton.YesNo,MessageBoxImage.Question)==MessageBoxResult.Yes)
+            {
+                var Worker = customersList.SelectedItem as Worker;
+                AppConnect.model1db.Worker.Remove(Worker);
+                AppConnect.model1db.SaveChanges();
+                customersList.ItemsSource = AppConnect.model1db.Worker.ToList();
+            }
+            
             
         }
 
         private void SearchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+           if(SearchTb.Text.Length == 0)
+            {
+                customersList.ItemsSource = AppConnect.model1db.Worker.ToList(); 
+
+            }
+            else
+            {
+                QQQ();
+            }
+
 
         }
+        private void QQQ()
+        {
+            var Bloody = AppConnect.model1db.Worker.ToList();
+            Bloody = Bloody.Where(A => A.Name.ToLower().Contains(SearchTb.Text.ToLower())).ToList();
+            customersList.ItemsSource = Bloody.OrderBy(B => B.Number).ToList();
+        }
+        
+
     }
 }

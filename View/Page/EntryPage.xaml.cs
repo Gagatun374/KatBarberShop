@@ -24,5 +24,10 @@ namespace KatBarberShop.View.Page
         {
             InitializeComponent();
         }
+
+        private void AddBt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

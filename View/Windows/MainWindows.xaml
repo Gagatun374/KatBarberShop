@@ -34,7 +34,7 @@
                     BorderBrush="#F7FBFC" 
                      x:Name="EmployeesTb" Click="EmployeesTb_Click"/>
                 <Button  Style="{StaticResource RoundButton}"  Margin="0 0 0 25" Width="100" Height="30"
-                    Content="Запись" 
+                    Content="Добавление" 
                     Background="Transparent"
                     Foreground="#F7FBFC"
                     BorderBrush="#F7FBFC" 

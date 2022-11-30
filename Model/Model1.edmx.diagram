@@ -4,21 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d765bdf9dc5b4cb0acd27c1eecf62f6d" Name="Diagram1">
-        <EntityTypeShape EntityType="БарберШоп_KatModel.Clients" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.Contacts" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.PriceList" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.Service" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.Stock" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.TheEnd" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="БарберШоп_KatModel.Worker" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_Contacts" ManuallyRouted="false" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_PriceList" ManuallyRouted="false" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_Stock" ManuallyRouted="false" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Clients" ManuallyRouted="false" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Service" ManuallyRouted="false" />
-        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Worker" ManuallyRouted="false" />
+      <Diagram DiagramId="d765bdf9dc5b4cb0acd27c1eecf62f6d" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="БарберШоп_KatModel.Clients" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.Contacts" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.PriceList" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.Service" Width="1.5" PointX="3" PointY="8.625" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.Stock" Width="1.5" PointX="0.75" PointY="8.25" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.TheEnd" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="БарберШоп_KatModel.Worker" Width="1.5" PointX="3" PointY="5.625" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_Contacts" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_PriceList" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_Clients_Stock" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Clients" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Service" />
+        <AssociationConnector Association="БарберШоп_KatModel.FK_TheEnd_Worker" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
