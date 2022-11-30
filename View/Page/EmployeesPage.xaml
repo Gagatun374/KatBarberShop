@@ -29,6 +29,6 @@
         <Label Content="Search" FontSize="18"  Grid.Column="0"/>
         <TextBox x:Name="SearchTb" Grid.Column="0" Height="25" VerticalAlignment="Top" Margin="0 40 0 0" TextChanged="SearchTb_TextChanged"/>
         <Button Style="{StaticResource RoundButton}" x:Name="SearchBt" Width="100" Height="25" Content="Удаление" Background="Transparent" FontSize="15" VerticalAlignment="Top" Margin="0 80 0 0 " Click="SearchBt_Click"/>
-        
+        <Button Style="{StaticResource RoundButton}" x:Name="EditBt" Width="120" Height="25" Content="Редактирование" Background="Transparent" FontSize="15" VerticalAlignment="Top" Margin="0 120 0 0 " Click="EditBt_Click" />
     </Grid>
 </Page>

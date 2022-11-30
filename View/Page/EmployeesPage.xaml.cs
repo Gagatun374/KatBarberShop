@@ -64,7 +64,11 @@ namespace KatBarberShop.View.Page
             Bloody = Bloody.Where(A => A.Name.ToLower().Contains(SearchTb.Text.ToLower())).ToList();
             customersList.ItemsSource = Bloody.OrderBy(B => B.Number).ToList();
         }
-        
 
+        private void EditBt_Click(object sender, RoutedEventArgs e)
+        {
+            Worker worker = (Worker)customersList.SelectedItem;
+            
+        }
     }
 }
