@@ -47,7 +47,7 @@ namespace KatBarberShop.View.Windows
 
         private void EntryTb_Click(object sender, RoutedEventArgs e)
         {
-            EntryPage entryPage = new EntryPage();
+            EntryPage entryPage = new EntryPage(null);
             FrameClass.SweepFrame.Navigate(entryPage);
         }
 

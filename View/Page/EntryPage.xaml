@@ -20,7 +20,7 @@
             <Label Content="Surname" FontSize="25" HorizontalAlignment="Center"/>
             <TextBox x:Name="SurnameTb" Width="150" Height="25" VerticalAlignment="Top" Text="{Binding Surname}" />
             <Label Content="Data" FontSize="25" HorizontalAlignment="Center"/>
-            <TextBox x:Name="DataTb" Width="150" Height="25" VerticalAlignment="Top" Text="{Binding Data}" />
+            <TextBox x:Name="DataTb" Width="150" Height="25" VerticalAlignment="Top" Text="{Binding Data, StringFormat='{}{0:dd.MM.yyyy}'}" />
             <Label Content="Paul" FontSize="25" HorizontalAlignment="Center"/>
             <TextBox x:Name="PaulTb" Width="150" Height="25" VerticalAlignment="Top" Text="{Binding Paul}" />
         </StackPanel>
