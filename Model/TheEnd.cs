@@ -14,7 +14,7 @@ namespace KatBarberShop.Model
     
     public partial class TheEnd
     {
-        public int IdWorker { get; set; }
+        public Nullable<int> IdWorker { get; set; }
         public int IdClients { get; set; }
         public int IdService { get; set; }
         public int Id { get; set; }

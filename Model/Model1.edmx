@@ -68,7 +68,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="IdWorker" Type="int" Nullable="false" />
+          <Property Name="IdWorker" Type="int" />
           <Property Name="IdClients" Type="int" Nullable="false" />
           <Property Name="IdService" Type="int" Nullable="false" />
           <Property Name="Id" Type="int" Nullable="false" />
@@ -144,7 +144,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TheEnd_Worker">
-          <End Role="Worker" Type="Self.Worker" Multiplicity="1" />
+          <End Role="Worker" Type="Self.Worker" Multiplicity="0..1" />
           <End Role="TheEnd" Type="Self.TheEnd" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Worker">
@@ -370,7 +370,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="IdWorker" Type="Int32" Nullable="false" />
+          <Property Name="IdWorker" Type="Int32" />
           <Property Name="IdClients" Type="Int32" Nullable="false" />
           <Property Name="IdService" Type="Int32" Nullable="false" />
           <Property Name="Id" Type="Int32" Nullable="false" />
@@ -450,7 +450,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_TheEnd_Worker">
-          <End Type="БарберШоп_KatModel.Worker" Role="Worker" Multiplicity="1" />
+          <End Type="БарберШоп_KatModel.Worker" Role="Worker" Multiplicity="0..1" />
           <End Type="БарберШоп_KatModel.TheEnd" Role="TheEnd" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Worker">

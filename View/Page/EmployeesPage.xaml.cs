@@ -32,8 +32,8 @@ namespace KatBarberShop.View.Page
         {
             if(MessageBox.Show("Удалить?","Удаление",MessageBoxButton.YesNo,MessageBoxImage.Question)==MessageBoxResult.Yes)
             {
-                var Worker = customersList.SelectedItem as Worker;
-                AppConnect.model1db.Worker.Remove(Worker);
+                var worker = customersList.SelectedItem as Worker;
+                AppConnect.model1db.Worker.Remove(worker);
                 AppConnect.model1db.SaveChanges();
                 customersList.ItemsSource = AppConnect.model1db.Worker.ToList();
             }
